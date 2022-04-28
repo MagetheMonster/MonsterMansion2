@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en">
+<head> 
+    <meta charset="utf-8"> 
+    <title>The World of Mage the Monster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> 
+        @import url(../Who_I_am.css);
+    </style>
+</head>
+
+<body>
+    <div id="photos">
+
+        <div id="header">
+    <header>
+        <nav>
+            <ul class="main_nav">
+                <li class="logo"><img src="../images/logo80.jpg" alt="MM Comics"></li>
+                <li>
+                    <a href="../index.html">Home</a> 
+                </li>
+                <li>
+                    <a href="../hobbies/hobbies.html">Hobbies</a>
+                </li>
+                <li>
+                    <a href="../Video/Mage_Videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="Work.html">My World</a>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    </div>
+    
+<main class="works">
+
+    <h1>The World of Mage the Monster</h1>
+    
+    <p>Here are some images of my personal <b>logos</b> I created, my first <b>original character</b> concept, as well as some of my photography work.</p>
+    <p>If you would like to see some more of my work check out my Youtube channel
+        <a href="https://www.youtube.com/channel/UCxfQBOP-0Dnjumo9lD-LBUg" target="break">here</a>.
+    Or you can see some samples on my Video page <a href="../Video/Mage_Videos.html"> Mage the Montser's videos</a>.</p>
+</main>
+
+<div id="logo">
+    <img src="../images/logo.jpg" id="imghover" alt="Logo">    
+    </div>
+
+    <picture id="mage">
+        <! source media="(min-width: 480px)" srcset="../images/magethemonster1.jpg 300w, ../images/magethemonster2.jpg 800w, ../images/magethemonster3.jpg 1200w" 
+        sizes="50vw">
+        <img src="../images/magethemonster2.jpg" id="imghover3" alt="Original character">
+        </picture>
+
+    <div id="panel">
+    <img src="../images/panel.jpg" id="imghover2" alt="Panel">
+    </div>
+
+    <picture id="rage">
+        <! source media="(min-width: 480px)" srcset="../images/mages_rage1.jpg 1200w, ../images/mages_rage2.jpg 800w, ../images/mages_rage3.jpg 400w" 
+        sizes="50vw">
+    <img src="../images/mages_rage2.jpg" id="imghover4" alt="Comic cover"> 
+</picture>
+
+
+<div id="footer">
+<footer>  
+    <div id="property">
+    <small>Property of Wilson Arocho</small>
+    </div>
+    <nav>
+        <ul class="main_nav">
+            <li class="logo"><img src="../images/logo80.jpg" alt="MM Comics"></li>
+            <li>
+                <a href="../index.html">Home</a> 
+            </li>
+            <li>
+                <a href="../hobbies/hobbies.html">Hobbies</a>
+            </li>
+            <li>
+                <a href="../Video/Mage_Videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="Work.html">My World</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#imghover2').hover(function(){
+                $('#imghover2').attr('src', '../images/beam960.jpg');
+            },
+            function(){
+                $('#imghover2').attr('src', '../images/panel.jpg');
+            })
+        })
+        $(function(){
+            $('#imghover').hover(function(){
+                $('#imghover').attr('src', '../images/lamp.JPG');
+            },
+            function(){
+                $('#imghover').attr('src', '../images/logo.jpg');
+            })
+        })
+        $(function(){
+            $('#imghover3').hover(function(){
+                $('#imghover3').attr('src', '../images/love.jpg');
+            },
+            function(){
+                $('#imghover3').attr('src', '../images/magethemonster2.jpg');
+            })
+        })
+        $(function(){
+            $('#imghover4').hover(function(){
+                $('#imghover4').attr('src', '../images/water_gun.JPG');
+            },
+            function(){
+                $('#imghover4').attr('src', '../images/mages_rage2.jpg');
+            })
+        })
+    </script>
+
+</body>
+</html>

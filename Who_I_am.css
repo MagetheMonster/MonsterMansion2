@@ -1,0 +1,409 @@
+/* header styles */
+header {
+    margin: 0;
+    text-align: center;
+    background-color: gold ;
+    border: 3px solid red;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: .5em;
+}
+
+/* link / Nav styles */
+/*a {
+    text-decoration: none;
+}*/
+a:link {
+    color: rgb(248, 101, 101);
+}
+a:visited {
+    color: crimson;
+}
+a:hover {
+    color: rgb(254, 61, 61);
+    background-color: whitesmoke;
+}
+a:active {
+    color: black;
+    background-color: crimson;
+}
+.main_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: .3em;
+    margin: auto;
+}    
+.main_nav a {
+    color: darkred;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 10px;
+}
+.main_nav a:hover {
+    background-color: black;
+    color: darkred;
+}
+li.logo {
+    margin: 0 8em 0 10em;
+}
+
+/* video styles */
+#video1 {
+    margin: 10px;
+    padding: 2em;
+}
+#video2 {
+    margin: 10px;
+    padding: 2em;
+}
+#video3 {
+    margin: 10px;
+    padding: 2em;
+}
+video {
+    max-width: 100%;
+}
+
+/* main styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+}
+h1 {
+    font: bold 2em times, serif;
+    color: red;
+    text-shadow: .1em .1em .15em gold;
+}
+h2 {
+    color: red;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: serif;
+    letter-spacing: .3em;
+}
+p {
+    color: whitesmoke; 
+    font-family: sans-serif;
+    margin: 15px;
+}
+b {
+    color:gold
+}
+em {
+    color: gold;
+}
+#hobbies {
+    list-style: none;
+    color: whitesmoke;
+    margin-right: 3em;
+}
+td, th {
+    border: 1px solid red;
+    color: whitesmoke;
+    padding: 1em; 
+} 
+table {
+    border: 1px solid red;
+    margin: 10px; 
+}
+.main_photo {
+    margin: 1em;
+}
+img {
+    max-width: 100%;
+}
+button {
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid red;
+    box-shadow: .1em .1em .2em gold;
+    border-radius: 20px;
+}
+/* footer styles */
+#property {
+    color: black;
+    text-align: center;
+}
+footer {
+    margin: 0;
+    text-align: center;
+    background-color: gold ;
+    border: 3px solid red;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    padding: .5em;
+}
+/* grid styles */
+#container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                          "main" 
+                          "aside"
+                          "main2"
+                          "aside2"
+                          "footer";
+  }
+ #header {
+    grid-area: header;
+  }
+ .main_photo {
+    grid-area: main;
+  }
+ .intro {
+    grid-area: aside;
+  }
+  #job {
+    grid-area: main2;
+}
+  #info {
+    grid-area: aside2;
+}
+ #footer {
+    grid-area: footer;
+  }
+
+  /* media quaries */
+    @media screen and (min-width: 450px) {
+    .main_nav a {
+        font-size: 11px;
+        margin-left: 3em;
+    }    
+    li.logo {
+        margin: 1em 8em 1em 10em;
+    }
+    body {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 600px) {
+    .main_nav a {
+        font-size: 12px;
+        margin-left: 5em;
+    }
+    li.logo {
+        margin: 1em 10em 1em 12em;
+    }
+    body {
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main_nav a {
+        font-size: 12px;
+    }
+    li.logo {
+        margin: 1em 5em 1em 1em;
+    }
+    body {
+        font-size: 1em;
+    }
+    #container {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header"
+                              "main aside"
+                              "main2 aside2" 
+                              "footer footer";
+      }
+     #header {
+        grid-area: header;
+      }
+     .main_photo {
+        grid-area: main;
+      }
+     .intro {
+        grid-area: aside;
+      }
+      #job {
+        grid-area: main2;
+    }
+      #info {
+        grid-area: aside2;
+    }
+     #footer {
+        grid-area: footer;
+      }
+    
+      #MMvideos {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header"
+                              "main main"
+                               "main2 main2"
+                               "main3 main3"
+                               "main4 main4"          
+                              "footer footer";
+      }
+     #header {
+        grid-area: header;
+      }
+      #vid {
+          grid-area: main;
+      }
+     #video1 {
+        grid-area: main2;
+      }
+     #video2 {
+        grid-area: main3;
+      }
+      #video3 {
+          grid-area: main4;
+      }
+     #footer {
+        grid-area: footer;
+      }
+      #photos {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header"
+                              "main main"
+                               "main2 main3"
+                               "main4 main5"          
+                              "footer footer";
+      }
+     #header {
+        grid-area: header;
+      }
+      .works {
+          grid-area: main;
+      }
+     #logo {
+        grid-area: main2;
+      }
+     #panel {
+        grid-area: main3;
+      }
+      #mage {
+          grid-area: main4;
+      }
+      #rage {
+          grid-area: main5;
+      }
+     #footer {
+        grid-area: footer;
+      }
+}
+@media screen and (min-width: 1000px) {
+    .main_nav a {
+        font-size: 12px;
+        margin-left: 3em;
+    }
+    li.logo {
+        margin: 1em 8em 1em 1em;
+    }
+    body {
+        font-size: 1.3em;
+    }
+  #container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "main2 main2 main3"
+        "aside2 aside2 aside3"
+        "footer footer footer";
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+  }
+ #header {
+    grid-area: header;
+  }
+ .main_photo {
+    grid-area: main;
+  }
+ .intro {
+    grid-area: aside;
+  }
+  #job {
+      grid-area: main2;
+  }
+  #info {
+      grid-area: aside2;
+  }
+ #footer {
+    grid-area: footer;
+  }
+  #MMvideos {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                          "main main"
+                           "main2 main2"
+                           "main3 main3"
+                           "main4 main4"          
+                          "footer footer";
+                          max-width: 1100px;
+                          margin: 0 auto;
+                          position: relative;
+  }
+ #header {
+    grid-area: header;
+  }
+  #vid {
+      grid-area: main;
+  }
+ #video1 {
+    grid-area: main2;
+  }
+ #video2 {
+    grid-area: main3;
+  }
+  #video3 {
+      grid-area: main4;
+  }
+ #footer {
+    grid-area: footer;
+  }
+  #photos {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header"
+                          "main main"
+                           "main2 main3"
+                           "main4 main5"          
+                          "footer footer";
+                          max-width: 1100px;
+                          margin: 0 auto;
+                          position: relative;
+  }
+ #header {
+    grid-area: header;
+  }
+  .works {
+      grid-area: main;
+  }
+ #logo {
+    grid-area: main2;
+  }
+ #panel {
+    grid-area: main3;
+  }
+  #mage {
+      grid-area: main4;
+  }
+  #rage {
+      grid-area: main5;
+  }
+ #footer {
+    grid-area: footer;
+  } 
+}
